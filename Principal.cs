@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MySql.Data.MySqlClient;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -14,6 +15,8 @@ namespace projecto_dip_oficial
     {
         //Variavel
         string usuario = "";
+        Conexao conectar = new Conexao();
+
 
         //Fields
         private Button curretButton;
@@ -131,6 +134,7 @@ namespace projecto_dip_oficial
 
         private void PrincipalTitleBar_Load(object sender, EventArgs e)
         {
+            tipoUser();
             labelUsername.Text = usuario;
         }
 
@@ -176,6 +180,39 @@ namespace projecto_dip_oficial
                 this.Hide();
             }
 
+        }
+
+       
+
+
+        //Pegar o tipo de usuário
+        public string tipoUser()
+        {
+            conectar.abriConexao();
+            string sql = "SELECT TipoUser FROM hause.usuario where Email ='" + usuario+"'";
+            string tipo = "";
+            MySqlCommand comando = new MySqlCommand(sql, conectar.con);
+
+            try
+            {
+                string n = Convert.ToString(comando.ExecuteScalar());
+
+                tipo = n.ToString();
+
+                if(tipo == "Caixa")
+                {
+                    button2Stock.Enabled = false;
+                    button6Admin.Enabled = false;
+                }
+
+
+            }
+            catch (Exception ex)
+            {
+
+                MessageBox.Show(ex.Message);
+            }
+            return tipo;
         }
     }
 }
