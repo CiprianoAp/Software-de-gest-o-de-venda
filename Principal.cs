@@ -109,7 +109,7 @@ namespace projecto_dip_oficial
 
         private void button6Admin_Click(object sender, EventArgs e)
         {
-            ActivateButton(sender);
+            openChildForm(new Admin.AdminPrincipal(), sender);
         }
 
         private void button2Stock_Click(object sender, EventArgs e)
@@ -176,7 +176,7 @@ namespace projecto_dip_oficial
             if (resultado == DialogResult.Yes)
             {
                 Form1 login = new Form1();
-                login.Show();
+                login.ShowDialog();
                 this.Hide();
             }
 
@@ -203,6 +203,13 @@ namespace projecto_dip_oficial
                 {
                     button2Stock.Enabled = false;
                     button6Admin.Enabled = false;
+                }
+                else
+                {
+                    button6Admin.Enabled=true;
+                    button1Vender.Enabled = false;
+                    Realatorio.Enabled = false;
+                    button5Fechar.Enabled = false;
                 }
 
 

@@ -98,6 +98,12 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Admin\AdminPrincipal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin\AdminPrincipal.Designer.cs">
+      <DependentUpon>AdminPrincipal.cs</DependentUpon>
+    </Compile>
     <Compile Include="Conexao.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
@@ -156,6 +162,9 @@
     <Compile Include="User\FrmUsuario.Designer.cs">
       <DependentUpon>FrmUsuario.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Admin\AdminPrincipal.resx">
+      <DependentUpon>AdminPrincipal.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>

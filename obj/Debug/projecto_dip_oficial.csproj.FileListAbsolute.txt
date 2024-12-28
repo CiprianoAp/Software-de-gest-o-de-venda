@@ -49,3 +49,4 @@ C:\Users\PC-DEFESA-GSTIC\Desktop\C# projectos\projecto_dip_oficial\projecto_dip_
 C:\Users\PC-DEFESA-GSTIC\Desktop\C# projectos\projecto_dip_oficial\projecto_dip_oficial\obj\Debug\projecto.39BBBCB2.Up2Date
 C:\Users\PC-DEFESA-GSTIC\Desktop\C# projectos\projecto_dip_oficial\projecto_dip_oficial\obj\Debug\projecto_dip_oficial.User.FrmUsuario.resources
 C:\Users\PC-DEFESA-GSTIC\Desktop\C# projectos\projecto_dip_oficial\projecto_dip_oficial\obj\Debug\projecto_dip_oficial.Forms.FormVendas.resources
+C:\Users\PC-DEFESA-GSTIC\Desktop\C# projectos\projecto_dip_oficial\projecto_dip_oficial\obj\Debug\projecto_dip_oficial.Admin.AdminPrincipal.resources

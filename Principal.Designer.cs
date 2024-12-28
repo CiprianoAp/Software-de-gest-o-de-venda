@@ -46,7 +46,6 @@
             this.lblTitle = new System.Windows.Forms.Label();
             this.panelDesktopPanel = new System.Windows.Forms.Panel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.panel1 = new System.Windows.Forms.Panel();
             this.panel1Manu.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             this.painelLogo.SuspendLayout();
@@ -293,7 +292,6 @@
             // 
             // panelDesktopPanel
             // 
-            this.panelDesktopPanel.Controls.Add(this.panel1);
             this.panelDesktopPanel.Controls.Add(this.pictureBox1);
             this.panelDesktopPanel.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelDesktopPanel.Location = new System.Drawing.Point(283, 80);
@@ -312,15 +310,6 @@
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
-            // 
-            // panel1
-            // 
-            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.panel1.Dock = System.Windows.Forms.DockStyle.Right;
-            this.panel1.Location = new System.Drawing.Point(1309, 0);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(332, 975);
-            this.panel1.TabIndex = 1;
             // 
             // PrincipalTitleBar
             // 
@@ -367,6 +356,5 @@
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.Label labelUsername;
         private System.Windows.Forms.PictureBox pictureBox3;
-        private System.Windows.Forms.Panel panel1;
     }
 }
